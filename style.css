@@ -1,0 +1,143 @@
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/montserrat-v31-latin/montserrat-v31-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/montserrat-v31-latin/montserrat-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/fraunces-v38-latin/fraunces-v38-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center; /*Center item horizontaly*/
+    align-items: center; /*Center item vertically*/
+}
+
+.card{
+    width: 90%;
+    max-width: 37rem;
+    height: auto;
+    min-height: 27.5rem;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.perfume_pic img{
+    width: 18.5rem;
+    height: 100%;
+    object-fit: cover;
+    
+
+}
+
+.content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    margin-bottom: 14px;
+    letter-spacing: 7px;
+}
+
+h1{
+    font-family: Fraunces;
+    margin-bottom: 14px;
+}
+
+p{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 23px;
+}
+
+#price{
+    color: hsl(158, 36%, 37%);
+}
+
+#price2{
+    margin-left: 16px;
+    margin-top: 12px;
+    text-decoration: line-through;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    margin-bottom: 14px;
+
+}
+
+.price_container{
+    display: flex;
+    margin-bottom: 14px;
+}
+
+button{
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 15rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+button:hover{
+    background: hsl(158, 42%, 18%);
+}
+
+@media(max-width: 768px){
+    html,body{
+        padding: 20px 0;
+    }
+    .card{
+        flex-direction: column;
+        width: 90%;
+        max-width: 343px;
+        min-height: auto;
+        margin: 20px auto;
+    }
+
+    .perfume_pic img{
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+    }
+}
