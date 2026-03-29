@@ -25,8 +25,10 @@ Users should be able to:
 - See hover and focus states for interactive elements
 
 ### Screenshot
-- Dextop View: ![Product-preview-card-component](./Screenshot/DextopView.png)
-- Mobile View: ![Product-preview-card-component](./Screenshot/MobileView.png)
+- Dextop View:
+  ![Product-preview-card-component](./Screenshot/DextopView.png)
+- Mobile View:
+   ![Product-preview-card-component](./Screenshot/MobileView.png)
 
 ### Links
 - Live Site URL: https://soumiligiri.github.io/Product-preview-card-component/
